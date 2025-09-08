@@ -928,7 +928,7 @@ button {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 30px;
 }
 
 .mobile-nav__buttons {
@@ -951,9 +951,9 @@ button {
 }
 
 @media (max-width: 1199px) {
-  .stricky-header {
+  /* .stricky-header {
     display: none !important;
-  }
+  } */
 }
 
 @media (min-width: 1200px) {
@@ -1470,7 +1470,7 @@ button {
   position: relative;
   display: inline-block;
   color: white;
-  font-size: 20px;
+  font-size: 24px;
   margin-top: 10px;
 }
 
@@ -1736,7 +1736,7 @@ button {
   bottom: 0;
   right: 0;
   content: "";
-  background-color: rgba(28, 12, 6, 0.45);
+  background-color: rgba(28, 12, 6, 0.20);
   z-index: -1;
 }
 
@@ -8181,7 +8181,7 @@ button {
 }
 
 .stricky-one-logo .logo a {
-  font-size: 18px !important;
+  font-size: 20px !important;
 }
 .stricky-one-logo .logo a:hover {
   color: var(--alori-base);
