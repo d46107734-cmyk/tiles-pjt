@@ -240,7 +240,7 @@
   .about-one--two--about {
     position: relative;
     display: block;
-    padding: 120px 0px 120px;
+    padding: 60px 0px 60px;
   }
 
   /**Video One Team**/
@@ -656,8 +656,7 @@
 }
 
 /** Mobile Layout: 320px. **/
-@media only screen and (max-width: 767px) { 
- 
+@media only screen and (max-width: 767px) {
   .sec-title__title {
     font-size: 35px;
   }
@@ -670,13 +669,11 @@
     display: none;
   }
   .hero_title {
-    display: none;
-    font-size: 40px !important;
+    font-size: 30px !important;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
+      -2px -2px 5px rgba(0, 0, 0, 0.3);
   }
   .main-slider-one__text {
-    display: none;
-  }
-  .main-slider-one__btn {
     display: none;
   }
   .image-layer {
@@ -684,7 +681,9 @@
     height: 100% !important;
     object-fit: contain !important;
   }
-   
+  .stricky-one-logo .logo a {
+    font-size: 20px !important;
+  }
 
   .iframe-map {
     width: fit-content !important;
@@ -696,24 +695,24 @@
   }
 
   .main-header--one__wrapper {
-    background: #0b0b0c;
+    background: #ffff;
   }
- 
 
-  .main-header--one__left .logo { 
+  .main-header--one__left .logo {
     top: -2px;
   }
   .main-header--one__left .logo > a {
     margin-top: 0px !important;
     left: -20px;
     font-size: 20px;
+    color: var(--alori-base);
   }
-
 
   .main-menu .mobile-nav__toggler {
     position: relative;
     display: inline-block;
-    top: 1px; 
+    top: 1px;
+    color: var(--alori-base);
   }
 
   /** Main Slider One**/
@@ -920,18 +919,18 @@
   .services-one__single h2 {
     font-size: 20px;
   }
-  
-.stricky-header .main-menu__inner { 
-  padding: 0 10px;
-  padding-right: 30px;
-}
- .abt-img {
-   display: flex !important; 
-   flex-direction: column-reverse !important;
-}
-.about-one {
-  padding: 0px 0 50px;
-}
+
+  .stricky-header .main-menu__inner {
+    padding: 0 10px;
+    padding-right: 30px;
+  }
+  .abt-img {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  .about-one {
+    padding: 0px 0 50px;
+  }
 
   /**Our Material One**/
   .our-material-one__content .sec-title__title br {
@@ -1461,14 +1460,22 @@
     margin-top: 40px;
   }
 
+  .contact-page-row {
+    flex-direction: column;
+  }
+
   .contact-page__get-in-touch .title p br {
     display: none;
   }
 
-  .contact-page__get-in-touch ul li {
-    display: block;
+  .big-mail { 
+    word-wrap: inherit;
   }
 
+   .contact-page__get-in-touch .text {
+    font-size: 16px;
+   }
+ 
   .contact-page__get-in-touch ul li .icon {
     margin-bottom: 20px;
   }

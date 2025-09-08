@@ -21,7 +21,7 @@
   --alori-font: "Kumbh Sans", sans-serif;
   --alori-font-2: "Domine", serif;
   --alori-font-3: "Titillium Web", sans-serif;
-  --alori-base: #1e817e;
+  --alori-base: #1c817d;
   --alori-base-rgb: 243, 126, 33;
   --alori-black: #392917;
   --alori-black-rgb: 57, 41, 23;
@@ -641,7 +641,10 @@ button {
 }
 
 .main-menu .main-menu__list > li.current > a,
-.main-menu .main-menu__list > li:hover > a,
+.main-menu .main-menu__list > li:hover > a {
+  color: #ffff;
+}
+
 .stricky-header .main-menu__list > li.current > a,
 .stricky-header .main-menu__list > li:hover > a {
   color: var(--alori-base);
@@ -897,7 +900,7 @@ button {
   z-index: 991;
   top: 0;
   left: 0;
-  background-color: var(--alori-gray);
+  background-color: #ffff;
   width: 100%;
   visibility: hidden;
   -webkit-transform: translateY(-120%);
@@ -913,6 +916,7 @@ button {
 
 .stricky-header.main-menu {
   padding: 0 0px;
+  color: var(--alori-base);
 }
 
 .stricky-header.stricky-fixed {
@@ -1056,7 +1060,7 @@ button {
 
 .mobile-nav__content {
   width: 300px;
-  background: var(--alori-gray);
+  background: #ffff;
   z-index: 10;
   position: relative;
   height: 100%;
@@ -1107,15 +1111,20 @@ button {
 
 .mobile-nav__content .main-menu__list ul {
   display: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--alori-black2);
 }
 
 .mobile-nav__content .main-menu__list li:not(:last-child) {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--alori-black2);
 }
 
 .mobile-nav__content .main-menu__list li ul {
   padding-left: 10px;
+}
+
+.sticky-logo-a {
+  color: var(--alori-base);
+  font-size: 20px;
 }
 
 .mobile-nav__content .main-menu__list li a {
@@ -1126,7 +1135,7 @@ button {
   -ms-flex-pack: justify;
   justify-content: space-between;
   line-height: 30px;
-  color: #ffffff;
+  color: var(--alori-black2);
   font-size: 16px;
   font-family: var(--thm-font);
   font-weight: 400;
@@ -1263,7 +1272,7 @@ button {
 }
 
 .mobile-nav__contact li a {
-  color: #ffffff;
+  color: var(--alori-black2);
   -webkit-transition: 500ms;
   transition: 500ms;
 }
@@ -1553,6 +1562,7 @@ button {
 
 .hero_title {
   font-size: 55px !important;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(0, 0, 0, 0.3);
 }
 .main-menu__list li > a {
   font-size: 18px !important;
@@ -1736,14 +1746,14 @@ button {
   bottom: 0;
   right: 0;
   content: "";
-  background-color: rgba(28, 12, 6, 0.20);
+  background-color: rgba(28, 12, 6, 0.2);
   z-index: -1;
 }
 
 .main-slider .container {
-  position: relative; 
-  padding-top: 200px;
-  padding-bottom: 180px;
+  position: relative;
+  padding-top: 250px;
+  padding-bottom: 260px;
   z-index: 2;
 }
 
@@ -2000,7 +2010,7 @@ button {
 .page-header {
   position: relative;
   display: block;
-  padding: 123px 0px 171px;
+  padding: 60px 0px 60px;
   overflow: hidden;
   z-index: 1;
 }
@@ -2055,13 +2065,14 @@ button {
 .page-header__content {
   position: relative;
   display: block;
+  text-align: center;
 }
 
 .page-header__content h2 {
   color: #ffffff;
-  font-size: 76px;
+  font-size: 55px;
   line-height: 1em;
-  font-weight: 700;
+  font-weight: 700; 
   margin-bottom: 19px;
 }
 
@@ -2117,10 +2128,6 @@ button {
   transition: all 200ms linear;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
-}
-
-.page-header__menu ul li a:hover {
-  color: var(--alori-base);
 }
 
 /***
@@ -2423,9 +2430,9 @@ button {
 .about-one__img2 .video-icon .video-popup {
   position: relative;
   display: inline-block;
-  width: 150px;
-  height: 130px;
-  line-height: 130px;
+  width: 120px;
+  height: 100px;
+  line-height: 110px;
   background: var(--alori-base);
   border-radius: 10px;
   color: #ffffff;
@@ -2444,7 +2451,8 @@ button {
 
 .about-one__content {
   position: relative;
-  display: block;
+  display: block; 
+  margin-top: 130px;
   margin-left: 25px;
 }
 
@@ -2455,8 +2463,8 @@ button {
 .about-one__content-text {
   position: relative;
   display: block;
-  padding-top: 36px;
-  padding-bottom: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-top: 1px solid #e9e9e9;
 }
 
@@ -3262,6 +3270,7 @@ button {
 .projects-one__single-content {
   position: relative;
   display: block;
+  height: 300px;
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 26px 0px rgba(215, 212, 212, 0.35);
   box-shadow: 0px 0px 26px 0px rgba(215, 212, 212, 0.35);
@@ -4558,17 +4567,22 @@ button {
 
 .about-two__content-text1 {
   position: relative;
-  display: block;
-  padding-top: 37px;
-  margin-bottom: 26px;
-  border-top: 1px solid #e9e9e9;
+  display: block;     
 }
 
 .about-two__content-text1 p {
   color: var(--alori-gray);
   font-weight: 500;
 }
-
+.about-one__img1 {
+  max-width: 800px;
+}
+.about-one__img1 img {
+  max-height: 300px; 
+}
+.about-one__img2 img { 
+  max-height: 300px;
+}
 .about-two__content-text2 {
   position: relative;
   display: block;
@@ -5285,7 +5299,7 @@ button {
 .about-one--two--about {
   position: relative;
   display: block;
-  padding: 120px 0px 120px;
+ padding: 60px 0px 60px;
 }
 
 .about-one--two--about .about-one__content-list li .icon {
@@ -5301,7 +5315,7 @@ button {
   position: relative;
   display: block;
   background: #ffffff;
-  padding: 0px 0px 120px;
+  padding: 0px 0px 50px;
 }
 
 .mission-one__content {
@@ -7516,7 +7530,7 @@ button {
   position: relative;
   display: block;
   border: none;
-  height: 600px;
+  height: 400px;
   width: 100%;
 }
 
@@ -7532,13 +7546,13 @@ button {
   padding: 120px 0px 120px;
   z-index: 1;
 }
+ 
 
 .contact-page__get-in-touch {
   position: relative;
   display: block;
-  max-width: 385px;
-  width: 100%;
-  z-index: 1;
+  max-width: 400px; 
+  z-index: 1; 
 }
 
 .contact-page__get-in-touch .title {
@@ -7551,7 +7565,7 @@ button {
   font-size: 35px;
   line-height: 45px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
 }
 
 .contact-page__get-in-touch .title p {
@@ -7559,6 +7573,7 @@ button {
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 24px;
+  text-align: center;
 }
 
 .contact-page__get-in-touch ul {
@@ -7571,13 +7586,13 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #f3f3f3;
+  background-color: #E5F8EE;
   border-radius: 5px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 36px 20px 46px;
-  margin-bottom: 30px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
 }
 
 .contact-page__get-in-touch ul li:last-child {
@@ -7587,8 +7602,8 @@ button {
 .contact-page__get-in-touch ul li .icon {
   position: relative;
   display: block;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   color: #ffffff;
   text-align: center;
   border-radius: 50%;
@@ -7606,11 +7621,20 @@ button {
   background: #7bcf99;
 }
 
+.contact-page__get-in-touch ul li .icon.bg3 {
+  
+  background: #775f40;
+}
+
+.contact-page__get-in-touch ul li .icon {
+width: 48px !important;
+}
+
 .contact-page__get-in-touch ul li .icon span:before {
   position: relative;
   display: inline-block;
-  font-size: 30px;
-  line-height: 75px;
+  font-size: 20px;
+  line-height: 50px;
 }
 
 .contact-page__get-in-touch ul li .text {
@@ -7632,7 +7656,7 @@ button {
   font-weight: 700;
   text-transform: capitalize;
   font-family: var(--alori-font-2);
-  margin-bottom: 13px;
+  margin-bottom: 8px;
 }
 
 .contact-page__get-in-touch ul li .text .telephone {
@@ -7677,16 +7701,11 @@ button {
   display: block;
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 24px 0px rgba(192, 198, 204, 0.35);
-  box-shadow: 0px 0px 24px 0px rgba(192, 198, 204, 0.35);
-  padding: 66px 40px 65px;
+  box-shadow: 0px 0px 24px 0px rgba(192, 198, 204, 0.35); 
   border-radius: 5px;
 }
 
-@media (min-width: 1200px) {
-  .contact-page__comment-form {
-    margin-left: -53px;
-  }
-}
+ 
 
 .contact-page__comment-form .title {
   position: relative;
@@ -7698,22 +7717,24 @@ button {
   font-size: 36px;
   line-height: 46px;
   font-weight: 700;
+  text-align: center;
   margin-bottom: 14px;
 }
 
 .contact-page__comment-form .title p {
+  text-align: center;
   color: rgba(var(--alori-gray-rgb), 0.9);
 }
 
 .contact-page__comment-form .comment-form__input-box input[type="text"],
 .contact-page__comment-form .comment-form__input-box input[type="email"] {
-  height: 60px;
+  height: 50px;
   width: 100%;
   border: 1px solid transparent;
-  background: #f5f4f4;
+  background: #E5F8EE;
   padding: 0 20px;
   margin-bottom: 20px;
-  border-radius: 0px;
+  border-radius: 10px;
   outline: none;
   font-size: 16px;
   color: rgba(var(--alori-gray-rgb), 0.7);
@@ -7731,7 +7752,7 @@ button {
   font-size: 16px;
   height: 150px;
   width: 100%;
-  background: #f5f4f4;
+  background: #E5F8EE;
   padding: 25px 20px 30px;
   border-radius: 0px;
   outline: none;
@@ -7877,7 +7898,7 @@ button {
   top: 0;
   width: 320px;
   height: 100%;
-  background: var(--alori-gray);
+  background: #ffff;
   z-index: 9999999999;
   -webkit-transition: all 700ms ease;
   transition: all 700ms ease;
@@ -7904,7 +7925,7 @@ button {
   width: 40px;
   height: 40px;
   background: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--alori-black2);
   border-radius: 0px;
   text-align: center;
   line-height: 40px;
@@ -7917,7 +7938,7 @@ button {
   background: none;
   display: block;
   font-size: 40px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--alori-black2);
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -7929,7 +7950,7 @@ button {
 }
 
 .hidden-bar .hidden-bar-closer:hover button {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--alori-base);
 }
 
 .hidden-bar-wrapper {
@@ -7946,7 +7967,7 @@ button {
 .hidden-bar .logo a {
   display: inline-block;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--alori-base);
 }
 
 .hidden-bar .logo img {
@@ -8013,13 +8034,13 @@ button {
 }
 
 .hidden-bar .contact-info-box ul li p {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--alori-black2);
   font-size: 17px;
   margin: 0;
 }
 
 .hidden-bar .contact-info-box ul li p a {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--alori-black2);
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
   -webkit-transition-delay: 0.1s;
@@ -8098,7 +8119,7 @@ button {
 }
 
 .hidden-bar .copy-right-text p {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--alori-black2);
   font-size: 14px;
   margin: 0;
 }
@@ -8181,7 +8202,8 @@ button {
 }
 
 .stricky-one-logo .logo a {
-  font-size: 20px !important;
+  font-size: 24px !important;
+  color: var(--alori-base);
 }
 .stricky-one-logo .logo a:hover {
   color: var(--alori-base);
@@ -8197,7 +8219,7 @@ button {
 .stricky-header .main-menu__list > li > a {
   padding-top: 33px;
   padding-bottom: 33px;
-  color: white;
+  color: var(--alori-black2);
 }
 
 /* update 4-1-2022 */
