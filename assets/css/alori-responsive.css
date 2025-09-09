@@ -222,10 +222,7 @@
     padding-top: 670px;
   }
 
-  /**Mission One**/
-  .mission-one {
-    padding: 0px 0px 345px;
-  }
+  /**Mission One**/ 
 
   .mission-one__content {
     max-width: none;
@@ -682,7 +679,11 @@
     object-fit: contain !important;
   }
   .stricky-one-logo .logo a {
-    font-size: 20px !important;
+    font-size: 30px !important;
+  }
+  .mobile-nav__content .logo-box a {
+     font-size: 30px !important;
+     color: var(--alori-base);
   }
 
   .iframe-map {
@@ -704,7 +705,7 @@
   .main-header--one__left .logo > a {
     margin-top: 0px !important;
     left: -20px;
-    font-size: 20px;
+    font-size: 30px;
     color: var(--alori-base);
   }
 
@@ -1219,18 +1220,14 @@
     font-size: 55px;
   }
 
-  /**Mission One**/
-  .mission-one {
-    padding: 0px 0px 120px;
-  }
-
+  /**Mission One**/ 
   .mission-one__content {
     max-width: none;
   }
 
   .mission-one__img {
-    margin-left: 0px;
-    margin-top: 50px;
+    margin-left: 0px; 
+    margin-bottom: 20px;
   }
 
   .mission-one__img-img2 img {
@@ -1252,7 +1249,7 @@
   .about-one--two--about {
     position: relative;
     display: block;
-    padding: 120px 0px 120px;
+    padding: 80px 0px 80px;
   }
 
   /**Video One Team**/
@@ -1280,16 +1277,21 @@
   }
 
   /**Services Single One**/
+  .product-row {
+    display: flex; 
+    flex-direction: column-reverse;
+  }
   .services-single-one {
-    padding: 120px 0px 83px;
+    padding:60px 0px 60px;
   }
 
   .services-single__sidebar {
-    max-width: none;
-    margin-top: 60px;
+    top: 0px;
+    max-width: none; 
   }
 
   .services-single-one__content .title h2 {
+    text-align: center;
     font-size: 40px;
   }
 
@@ -1307,7 +1309,14 @@
   }
 
   .services-single__sidebar-services {
-    padding: 34px 20px 50px;
+    padding: 0px 20px 50px;
+  }
+
+  .tab-pane h3 {
+    text-align: center;
+  }
+  .tab-pane ul {
+    text-align: center;
   }
 
   .services-single__sidebarlink li a {
