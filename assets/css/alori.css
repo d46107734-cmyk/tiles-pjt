@@ -2726,7 +2726,7 @@ button {
 .best-logistics-one__img-inner {
   position: relative;
   display: block;
-  overflow: hidden;
+  overflow: hidden; 
   z-index: 1; 
 }
 
@@ -2762,6 +2762,8 @@ button {
 
 .best-logistics-one__img-inner img {
   width: 100%;
+  height: 600px;
+  object-fit: cover;
 }
 
 .best-logistics-one__img .overlay-content {
@@ -3230,6 +3232,8 @@ button {
 .projects-one__single-img {
   position: relative;
   display: block;
+  width: 100%;
+  max-height: 300px;
   overflow: hidden;
   z-index: 1;
 }
@@ -4491,6 +4495,7 @@ projects-one::-webkit-scrollbar {
 
 .services-two__single-img img {
   width: 100%;
+  max-height: 600px;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: all 0.7s ease 0s;
@@ -4530,13 +4535,34 @@ projects-one::-webkit-scrollbar {
 }
 
 .services-two__single-content {
+  max-height: 300px;
   position: relative;
   display: block;
+  overflow-y: auto;           
+  scrollbar-width: thin;   
+  scrollbar-color: #ddd transparent;
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 26px 0px rgba(215, 212, 212, 0.35);
   box-shadow: 0px 0px 26px 0px rgba(215, 212, 212, 0.35);
   padding: 20px 50px;
   border: #3333 1px solid;
+}
+
+.services-two__single-content::-webkit-scrollbar {
+  width: 8px;                  
+  background: transparent;        
+}
+
+.services-two__single-content::-webkit-scrollbar-thumb { 
+  background: #ddd; 
+  margin: 40px 0;
+  border-radius: 4px;
+  min-height: 5px;                
+  max-height: 5px;    
+}
+
+.services-two__single-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.8);  
 }
 
 .img-responsive {
@@ -4568,6 +4594,7 @@ projects-one::-webkit-scrollbar {
 }
 
 .services-two__single-content p {
+  font-size: 16px;
   margin: 0;
 }
 
@@ -4595,7 +4622,7 @@ projects-one::-webkit-scrollbar {
 .about-one--two {
   position: relative;
   display: block;
-  padding: 30px 0px 100px;
+  padding: 0px 0px 30px;
 }
 
 .about-one--two .about-one__img2 {
@@ -6122,7 +6149,7 @@ projects-one::-webkit-scrollbar {
 .projects-one--protfolio {
   position: relative;
   display: block;
-  padding: 120px 0px 90px;
+  padding: 60px 0px 30px;
 }
 
 /***

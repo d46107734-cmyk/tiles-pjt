@@ -95,7 +95,8 @@
   }
 
   .about-one--two .about-one__img {
-    margin: 0;
+    margin: 0; 
+    margin: 0 auto;
   }
 
   .about-one--two .about-one__content-list {
@@ -109,8 +110,8 @@
     width: 100%;
   }
 
-  .best-logistics-one__img {
-    margin-left: 0px;
+  .best-logistics-one__img { 
+    margin: 0 auto;
     margin-top: 70px;
   }
 
